@@ -1,0 +1,21 @@
+{
+  "name": "contexto-bench",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Environment + benchmark harness for testing LLMs on Contexto via the Experiential Labs gateway",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "models": "tsx src/listModels.ts",
+    "bench": "tsx src/cli.ts",
+    "top5": "tsx src/topGuesses.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}
